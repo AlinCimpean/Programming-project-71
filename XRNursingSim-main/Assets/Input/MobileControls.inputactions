@@ -1,0 +1,64 @@
+{
+    "name": "MobileControls",
+    "maps": [
+        {
+            "name": "Player",
+            "id": "cefc847a-61ad-4975-88dc-63e2ffc8e671",
+            "actions": [
+                {
+                    "name": "Move",
+                    "type": "PassThrough",
+                    "id": "d310a7db-b329-4a6a-a50b-f7d760d38db2",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Pan",
+                    "type": "PassThrough",
+                    "id": "2f3d64e2-6422-4735-b719-597801cdc38e",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "b11edf8a-199b-491c-b740-981d0178697d",
+                    "path": "<Gamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "MobileControlScheme",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "148db7a5-4fda-4ed6-b55f-796bd1d42a17",
+                    "path": "<Gamepad>/rightStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pan",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "MobileControlScheme",
+            "bindingGroup": "MobileControlScheme",
+            "devices": [
+                {
+                    "devicePath": "<Touchscreen>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
