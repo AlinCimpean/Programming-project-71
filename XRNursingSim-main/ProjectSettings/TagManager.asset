@@ -3,7 +3,17 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Pressure
+  - Undefined
+  - Thermometer
+  - ContinueButton
+  - ContinueButton2
+  - ContinueButton3
+  - ContinueButton4
+  - ContinueButton5
+  - ContinueButton6
+  - ContinueButton7
   layers:
   - Default
   - TransparentFX
