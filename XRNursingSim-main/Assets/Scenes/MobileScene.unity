@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 2138677392}
-  m_IndirectSpecularColor: {r: 0.2850269, g: 0.3713935, b: 0.49601045, a: 1}
+  m_IndirectSpecularColor: {r: 0.28502667, g: 0.37139323, b: 0.49600998, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -16620,7 +16620,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &837020179
 Transform:
   m_ObjectHideFlags: 0
@@ -19982,9 +19982,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8a651d66a465478eb661b008a54b0fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  camera: {fileID: 1538695650}
   moveSpeed: 3
   rotateSpeed: 2
   panController: {fileID: 209028921}
+  sinkWater: {fileID: 318758299}
 --- !u!136 &1021193172
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -26189,7 +26191,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.21584013, y: 0.083673, z: 0.08780003}
+  m_Size: {x: 0.21584013, y: 0.18, z: 0.27}
   m_Center: {x: 0.045561094, y: 1.1011626, z: 0.0065084267}
 --- !u!54 &1492996478
 Rigidbody:
