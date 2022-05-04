@@ -33,6 +33,6 @@ public class WebBroswerPage : MonoBehaviour
         {
             toShow[i].SetActive(true);
         }
-    }
 
+    }
 }

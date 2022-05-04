@@ -11,6 +11,8 @@ public class SessionStart : MonoBehaviour
     public GameObject NextScreen;
     public GameObject EnableMonitor3;
     public GameObject DisablePlaceholder;
+    public GameObject Timer;
+    public GameObject Waiting;
 
     public void StartSession()
     {
@@ -18,6 +20,8 @@ public class SessionStart : MonoBehaviour
         NextScreen.SetActive(true);
         EnableMonitor3.SetActive(true);
         DisablePlaceholder.SetActive(false);
+        Timer.SetActive(true);
+        Waiting.SetActive(false);
         if (timerText != null)
         {
             time = 1200;
