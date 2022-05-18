@@ -5,6 +5,8 @@ using UnityEngine.InputSystem;
 
 public class MobileControlScript : MonoBehaviour
 {
+    public GameObject camera;
+
     public float moveSpeed = 0;
     public float rotateSpeed = 0;
     public GameObject panController;
@@ -13,6 +15,8 @@ public class MobileControlScript : MonoBehaviour
     private float movementY;
     private float panX;
     private float panControllerY;
+
+    public GameObject sinkWater;
 
     void Start() {
         panControllerY = panController.GetComponent<RectTransform>().anchoredPosition.y;
@@ -38,6 +42,18 @@ public class MobileControlScript : MonoBehaviour
         // move pan controller handle horizontally only
         float panControllerX = panController.GetComponent<RectTransform>().anchoredPosition.x;
         panController.GetComponent<RectTransform>().anchoredPosition = new Vector2(panControllerX, panControllerY);
+
+        if (Input.touchCount > 0 && Input.touches[0].phase == UnityEngine.TouchPhase.Began) {
+            RaycastHit hit;
+            Ray ray = camera.GetComponent<Camera>().ScreenPointToRay(Input.touches[0].position);
+            
+            if (Physics.Raycast(ray, out hit)) {
+                Transform objectHit = hit.transform;
+                if (hit.collider.name == "Sink") { // name of the sink gameobject
+                    toggleSink();
+                }
+            }
+        }
     }
 
     void OnMove(InputValue movementValue)
@@ -53,5 +69,9 @@ public class MobileControlScript : MonoBehaviour
         Vector2 panVector = value.Get<Vector2>();
 
         panX = panVector.x;
+    }
+
+    private void toggleSink() {
+        sinkWater.SetActive(!sinkWater.activeSelf);
     }
 }
