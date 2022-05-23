@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 2138677392}
-  m_IndirectSpecularColor: {r: 0.2850269, g: 0.3713935, b: 0.49601045, a: 1}
+  m_IndirectSpecularColor: {r: 0.28502667, g: 0.37139323, b: 0.49600998, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1054,7 +1054,7 @@ RectTransform:
   m_LocalScale: {x: 0.004000001, y: 0.004, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1868,7 +1868,7 @@ Transform:
   m_Children:
   - {fileID: 2117371827}
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &130977443
 GameObject:
@@ -14257,7 +14257,7 @@ Transform:
   - {fileID: 554593077}
   - {fileID: 2083016528}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &607889177
 MonoBehaviour:
@@ -14729,7 +14729,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &657609255
 GameObject:
@@ -15660,7 +15660,7 @@ Transform:
   - {fileID: 1418449010}
   - {fileID: 846972629}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &695417543
 GameObject:
@@ -16203,36 +16203,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 720899999}
   m_CullTransparentMesh: 1
---- !u!1 &723034054
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: debae6867426a4d2c85e33bd6232f118, type: 3}
-  m_PrefabInstance: {fileID: 984574814}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 723034055}
-  m_Layer: 0
-  m_Name: 'computer on wheels (Missing Prefab with guid: debae6867426a4d2c85e33bd6232f118)'
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &723034055
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: debae6867426a4d2c85e33bd6232f118, type: 3}
-  m_PrefabInstance: {fileID: 984574814}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 723034054}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 13
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &723880260
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18529,6 +18499,67 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 872005242}
   m_CullTransparentMesh: 1
+--- !u!1001 &875823127
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 5f57636b29a914c4ba275d9e20be7c01, type: 3}
+      propertyPath: m_RootOrder
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f57636b29a914c4ba275d9e20be7c01, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.17
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f57636b29a914c4ba275d9e20be7c01, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f57636b29a914c4ba275d9e20be7c01, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 11.074
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f57636b29a914c4ba275d9e20be7c01, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.51039284
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f57636b29a914c4ba275d9e20be7c01, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f57636b29a914c4ba275d9e20be7c01, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.85994136
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f57636b29a914c4ba275d9e20be7c01, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f57636b29a914c4ba275d9e20be7c01, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f57636b29a914c4ba275d9e20be7c01, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 118.62
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f57636b29a914c4ba275d9e20be7c01, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5f57636b29a914c4ba275d9e20be7c01, type: 3}
+      propertyPath: m_Name
+      value: computer on wheels export
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5f57636b29a914c4ba275d9e20be7c01, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5f57636b29a914c4ba275d9e20be7c01, type: 3}
 --- !u!1 &879690104
 GameObject:
   m_ObjectHideFlags: 0
@@ -20611,7 +20642,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: debae6867426a4d2c85e33bd6232f118, type: 3}
       propertyPath: m_RootOrder
-      value: 22
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: debae6867426a4d2c85e33bd6232f118, type: 3}
       propertyPath: m_LocalPosition.x
@@ -20656,6 +20687,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: debae6867426a4d2c85e33bd6232f118, type: 3}
       propertyPath: m_Name
       value: computer on wheels
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: debae6867426a4d2c85e33bd6232f118, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: debae6867426a4d2c85e33bd6232f118, type: 3}
@@ -28414,7 +28449,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 423860, guid: 08c49dfdb71ae5446b71f603df49bb2e, type: 3}
       propertyPath: m_RootOrder
-      value: 19
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 423860, guid: 08c49dfdb71ae5446b71f603df49bb2e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -29699,7 +29734,7 @@ Transform:
   - {fileID: 900185409}
   - {fileID: 1262298985}
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1566460169
 GameObject:
@@ -31317,7 +31352,7 @@ RectTransform:
   - {fileID: 1019192309}
   - {fileID: 458755147}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: -80, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
