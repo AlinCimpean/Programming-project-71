@@ -8,12 +8,6 @@ public class Active : MonoBehaviour
 {
     public GameObject txt;
 
-        public void FixedUpdate()
-    {
-            Debug.Log("Active");
-            open();
-    }
-
     public void open(){
         Debug.Log("Active");
         txt.SetActive(true);
