@@ -8,26 +8,26 @@
                 {
                     "name": "Move",
                     "type": "PassThrough",
-                    "id": "d310a7db-b329-4a6a-a50b-f7d760d38db2",
+                    "id": "5632aebf-1255-4168-b0ba-8fb2e3ecfc3f",
                     "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false
+                    "initialStateCheck": true
                 },
                 {
                     "name": "Pan",
                     "type": "PassThrough",
-                    "id": "2f3d64e2-6422-4735-b719-597801cdc38e",
+                    "id": "a5004e40-cd05-4fe9-849c-c5f608e9d9cb",
                     "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
                 {
                     "name": "",
-                    "id": "b11edf8a-199b-491c-b740-981d0178697d",
+                    "id": "538e9efc-eadb-4ac8-8a18-7e5914759ac9",
                     "path": "<Gamepad>/leftStick",
                     "interactions": "",
                     "processors": "",
@@ -38,7 +38,7 @@
                 },
                 {
                     "name": "",
-                    "id": "148db7a5-4fda-4ed6-b55f-796bd1d42a17",
+                    "id": "f51ad4fc-e2f8-473c-8993-54773d9598b1",
                     "path": "<Gamepad>/rightStick",
                     "interactions": "",
                     "processors": "",
@@ -57,6 +57,11 @@
             "devices": [
                 {
                     "devicePath": "<Touchscreen>",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<Gamepad>",
                     "isOptional": false,
                     "isOR": false
                 }
