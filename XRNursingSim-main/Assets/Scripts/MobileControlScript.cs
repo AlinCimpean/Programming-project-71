@@ -20,7 +20,6 @@ public class MobileControlScript : MonoBehaviour
 
     void Start() {
         panControllerY = panController.GetComponent<RectTransform>().anchoredPosition.y;
-        print("Started mobile control script");
     }
 
     void Update() {
@@ -45,7 +44,6 @@ public class MobileControlScript : MonoBehaviour
         panController.GetComponent<RectTransform>().anchoredPosition = new Vector2(panControllerX, panControllerY);
 
         if (Input.touchCount > 0 && Input.touches[0].phase == UnityEngine.TouchPhase.Began) {
-            // print("touch");
             RaycastHit hit;
             Ray ray = userCamera.GetComponent<Camera>().ScreenPointToRay(Input.touches[0].position);
             
@@ -60,7 +58,6 @@ public class MobileControlScript : MonoBehaviour
 
     void OnMove(InputValue movementValue)
     {
-        print("mobile control script on move");
         Vector2 movementVector = movementValue.Get<Vector2>();
 
         movementX = movementVector.x;
@@ -69,7 +66,6 @@ public class MobileControlScript : MonoBehaviour
 
     void OnPan(InputValue value)
     {
-        print("mobile control script on pan");
         Vector2 panVector = value.Get<Vector2>();
 
         panX = panVector.x;
