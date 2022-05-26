@@ -11,7 +11,8 @@
                     "id": "d310a7db-b329-4a6a-a50b-f7d760d38db2",
                     "expectedControlType": "Vector2",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "Pan",
@@ -19,7 +20,8 @@
                     "id": "2f3d64e2-6422-4735-b719-597801cdc38e",
                     "expectedControlType": "Vector2",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -40,7 +42,7 @@
                     "path": "<Gamepad>/rightStick",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "MobileControlScheme",
                     "action": "Pan",
                     "isComposite": false,
                     "isPartOfComposite": false
