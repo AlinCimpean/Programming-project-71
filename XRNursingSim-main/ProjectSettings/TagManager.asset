@@ -14,6 +14,7 @@ TagManager:
   - ContinueButton5
   - ContinueButton6
   - ContinueButton7
+  - Board
   layers:
   - Default
   - TransparentFX
