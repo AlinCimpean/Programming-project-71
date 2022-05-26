@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 
 public class MobileControlScript : MonoBehaviour
 {
-    public GameObject camera;
+    public GameObject userCamera;
 
     public float moveSpeed = 0;
     public float rotateSpeed = 0;
@@ -20,6 +20,7 @@ public class MobileControlScript : MonoBehaviour
 
     void Start() {
         panControllerY = panController.GetComponent<RectTransform>().anchoredPosition.y;
+        print("Started mobile control script");
     }
 
     void Update() {
@@ -44,8 +45,9 @@ public class MobileControlScript : MonoBehaviour
         panController.GetComponent<RectTransform>().anchoredPosition = new Vector2(panControllerX, panControllerY);
 
         if (Input.touchCount > 0 && Input.touches[0].phase == UnityEngine.TouchPhase.Began) {
+            // print("touch");
             RaycastHit hit;
-            Ray ray = camera.GetComponent<Camera>().ScreenPointToRay(Input.touches[0].position);
+            Ray ray = userCamera.GetComponent<Camera>().ScreenPointToRay(Input.touches[0].position);
             
             if (Physics.Raycast(ray, out hit)) {
                 Transform objectHit = hit.transform;
@@ -58,6 +60,7 @@ public class MobileControlScript : MonoBehaviour
 
     void OnMove(InputValue movementValue)
     {
+        print("mobile control script on move");
         Vector2 movementVector = movementValue.Get<Vector2>();
 
         movementX = movementVector.x;
@@ -66,6 +69,7 @@ public class MobileControlScript : MonoBehaviour
 
     void OnPan(InputValue value)
     {
+        print("mobile control script on pan");
         Vector2 panVector = value.Get<Vector2>();
 
         panX = panVector.x;
