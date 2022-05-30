@@ -1670,7 +1670,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &118426067
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2952,7 +2952,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &209028922
 RectTransform:
   m_ObjectHideFlags: 0
@@ -20367,6 +20367,7 @@ MonoBehaviour:
   rotateSpeed: 2
   panController: {fileID: 209028921}
   sinkWater: {fileID: 318758299}
+  notepad: {fileID: 1085020202}
 --- !u!1 &1024055249
 GameObject:
   m_ObjectHideFlags: 0
@@ -23025,7 +23026,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1231700336
 RectTransform:
   m_ObjectHideFlags: 0
@@ -28065,7 +28066,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1582089571
 RectTransform:
   m_ObjectHideFlags: 0

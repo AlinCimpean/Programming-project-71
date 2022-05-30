@@ -16,10 +16,14 @@ public class MobileControlScript : MonoBehaviour
     private float panX;
     private float panControllerY;
 
+    private float keyboardRotateSpeed = 0;
+
     public GameObject sinkWater;
+    public GameObject notepad;
 
     void Start() {
         panControllerY = panController.GetComponent<RectTransform>().anchoredPosition.y;
+        keyboardRotateSpeed = 0.7f;
     }
 
     void Update() {
@@ -64,11 +68,49 @@ public class MobileControlScript : MonoBehaviour
         movementY = movementVector.y;
     }
 
+    void OnMoveKeyboard(InputValue movementValue)
+    {
+        if (!notepad.activeSelf) {
+            Vector2 movementVector = movementValue.Get<Vector2>();
+
+            movementX = movementVector.x;
+            movementY = movementVector.y;
+        }
+    }
+
     void OnPan(InputValue value)
     {
         Vector2 panVector = value.Get<Vector2>();
 
         panX = panVector.x;
+    }
+
+    void OnLookLeft(InputValue value)
+    {
+        if (!notepad.activeSelf) {
+            Vector2 panVector;
+            if (value.isPressed) {
+                panVector = new Vector2(-keyboardRotateSpeed, 0);
+            } else {
+                panVector = new Vector2(0, 0);
+            }
+
+            panX = panVector.x;
+        }
+    }
+
+    void OnLookRight(InputValue value)
+    {
+        if (!notepad.activeSelf) {
+            Vector2 panVector;
+            if (value.isPressed) {
+                panVector = new Vector2(keyboardRotateSpeed, 0);
+            } else {
+                panVector = new Vector2(0, 0);
+            }
+
+            panX = panVector.x;
+        }
     }
 
     private void toggleSink() {
