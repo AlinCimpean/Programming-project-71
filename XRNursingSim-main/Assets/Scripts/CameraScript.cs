@@ -18,10 +18,10 @@ public class CameraScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       if(Input.GetMouseButton(0))
+        if (Input.GetMouseButton(0))
         {
              
-            transform.eulerAngles += Speed * new Vector3( -Input.GetAxis("Mouse Y"), Input.GetAxis("Mouse X"),0) ; 
+            transform.eulerAngles += Speed * new Vector3(0, -Input.GetAxis("Mouse X"), 0) ; 
         }
       
     }
