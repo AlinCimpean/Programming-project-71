@@ -4,11 +4,10 @@ using UnityEngine;
 
 public class CameraScript : MonoBehaviour
 {
-    public float speedH = 2.0f;
-    public float speedV = 2.0f;
+    
+    public float Speed = 2.0f;
 
-    public float yaw = 0.0f;
-    public float pitch = 0.0f;
+   
 
     // Start is called before the first frame update
     void Start()
@@ -19,16 +18,11 @@ public class CameraScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetMouseButton(0))
+       if(Input.GetMouseButton(0))
         {
-            yaw -= speedH * Input.GetAxis("Mouse X");
-            pitch -= speedV * Input.GetAxis("Mouse Y");
-
-            transform.eulerAngles = new Vector3(pitch, yaw, 0.0f);
+             
+            transform.eulerAngles += Speed * new Vector3( -Input.GetAxis("Mouse Y"), Input.GetAxis("Mouse X"),0) ; 
         }
-        // yaw += speedH * Input.GetAxis("Mouse X");
-        // pitch += speedV * Input.GetAxis("Mouse Y");
-
-        // transform.eulerAngles = new Vector3(pitch, yaw, 0.0f);
+      
     }
 }
