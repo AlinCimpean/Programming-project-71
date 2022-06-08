@@ -1,7 +1,9 @@
 # Programming-project-71
 
 GITHUB URL : https://github.com/s3780838/Programming-project-71
+
 WEB GL DESKTOP-VERSION URL : https://soheekim.itch.io/clinicsim-desktop
+
 WEB GL MOBILE-VERSION URL : https://soheekim.itch.io/clinicsim
 
 BUILD INSTALLATION AND RUNNING INSTRUCTIONS
